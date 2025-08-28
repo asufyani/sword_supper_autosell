@@ -30,10 +30,12 @@
     const altsToDelete = {};
     $equipment.each(function (idx, equipmentItem) {
       console.log("found an item");
-      if (altsToDelete[$(equipmentItem).find("img")[1].alt]) {
+      if ($(equipmentItem).find("img")[1].alt.includes("Map")) {
+        console.log("found a map");
+      } else if (altsToDelete[$(equipmentItem).find("img")[1].alt]) {
         console.log("found a repeat");
         $(equipmentItem).click();
-        setTimeout(clickSellButton, 500);
+        // setTimeout(clickSellButton, 500);
       } else {
         console.log("not a repeat");
         altsToDelete[$(equipmentItem).find("img")[1].alt] = true;
