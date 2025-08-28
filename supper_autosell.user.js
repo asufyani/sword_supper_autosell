@@ -7,6 +7,8 @@
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        unsafeWindow
+// @downloadURL  https://github.com/asufyani/sword_supper_autosell/raw/refs/heads/main/supper_autosell.user.js
+// @updateURL    https://github.com/asufyani/sword_supper_autosell/raw/refs/heads/main/supper_autosell.user.js
 
 // ==/UserScript==
 
