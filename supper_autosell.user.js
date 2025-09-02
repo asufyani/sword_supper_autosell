@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Supper Autosell
-// @version      0.0.5
+// @version      0.0.6
 // @description  autosell duplicate items
 // @author       u/Thats_a_movie (github.com/asufyani)
 // @match        https://*.devvit.net/index.html*
@@ -30,9 +30,9 @@
     const altsToDelete = {};
     $equipment.each(function (idx, equipmentItem) {
       console.log("found an item");
-      if ($(equipmentItem).find("img")[1].alt.includes("Map")) {
+      if ($(equipmentItem).find("img.item-image").alt.includes("Map")) {
         console.log("found a map");
-      } else if (altsToDelete[$(equipmentItem).find("img")[1].alt]) {
+      } else if (altsToDelete[$(equipmentItem).find("img.item-image").alt]) {
         console.log("found a repeat");
         $(equipmentItem).click();
         // setTimeout(clickSellButton, 500);
